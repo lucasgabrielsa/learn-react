@@ -4,7 +4,7 @@ import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 //import Teste from "./Teste";
-import PersonalInfo from "./PersonalInfo";
+import PersonalInfo from "./components/PersonalInfo";
 
 ReactDOM.render(
   <React.StrictMode>

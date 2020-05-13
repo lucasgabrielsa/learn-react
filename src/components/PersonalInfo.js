@@ -1,5 +1,6 @@
 import React from "react";
 import VacationSpots from "./VacationSpots";
+import Footer from "./Footer";
 
 const myDivStyle = {
   color: "#FFFFFF",
@@ -17,6 +18,7 @@ function PersonalInfo() {
 
       <p>Favorite spots to visit on vacation:</p>
       <VacationSpots />
+      <Footer />
     </div>
   );
 }
