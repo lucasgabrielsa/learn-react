@@ -1,10 +1,9 @@
 import React from "react";
-
-const spots = ["Porto Seguro", "Netherlands", "Caldas Novas"];
+import VacationSpots from "./VacationSpots";
 
 const myDivStyle = {
-  color: "white",
-  backgroundColor: "DodgerBlue",
+  color: "#FFFFFF",
+  backgroundColor: "#B00020",
   padding: "10px",
   fontFamily: "Arial",
 };
@@ -17,11 +16,7 @@ function PersonalInfo() {
       <hr />
 
       <p>Favorite spots to visit on vacation:</p>
-      <ul>
-        {spots.map((spot) => {
-          return <li>{spot}</li>;
-        })}
-      </ul>
+      <VacationSpots />
     </div>
   );
 }
