@@ -2,6 +2,7 @@ import React from "react";
 import VacationSpots from "./VacationSpots";
 import Footer from "./layouts/Footer";
 import Navbar from "./layouts/Navbar";
+import Todo from "./Todo";
 
 const myDivStyle = {
   /*
@@ -23,6 +24,9 @@ function PersonalInfo() {
       <p>Favorite spots to visit on vacation:</p>
       <VacationSpots />
       <Footer />
+
+      <hr />
+      <Todo />
     </div>
   );
 }
