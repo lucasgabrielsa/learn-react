@@ -3,6 +3,7 @@ import VacationSpots from "./VacationSpots";
 import Footer from "./layouts/Footer";
 import Navbar from "./layouts/Navbar";
 import Todo from "./Todo";
+import HelloWorld from "./HelloWorld";
 
 const myDivStyle = {
   /*
@@ -27,6 +28,9 @@ function PersonalInfo() {
 
       <hr />
       <Todo />
+
+      <br />
+      <HelloWorld />
     </div>
   );
 }
