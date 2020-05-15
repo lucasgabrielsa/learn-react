@@ -7,9 +7,16 @@ class Counter extends React.Component {
       count: 0,
     };
     this.incrementCounter = this.incrementCounter.bind(this);
+    this.mostrarNome = this.mostrarNome.bind(this);
   }
 
-  incrementCounter = () => {
+  mostrarNome = (nome, e) => {
+    console.log("nome", nome);
+  };
+
+  incrementCounter = (e) => {
+    console.log("e", e);
+    e.preventDefault();
     // this.setState({
     //   count: this.state.count + 1,
     // });
@@ -32,6 +39,14 @@ class Counter extends React.Component {
           onClick={this.incrementCounter}
         >
           Increment
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onClick={this.mostrarNome.bind(this, "Lucas Gabriel")}
+        >
+          Mostre o Nome
         </button>
       </div>
     );
