@@ -1,28 +1,41 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 
-const todos = [
-  { description: "Lavar a garagem", isDone: false },
-  { description: "Estidar React", isDone: false },
-  { description: "Earn a lof of money", isDone: true },
-];
-const styles = { listStyleType: "none" };
+class Todo extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      todos: [
+        { description: "Lavar a garagem", isDone: false },
+        { description: "Estidar React", isDone: false },
+        { description: "Earn a lof of money", isDone: true },
+      ],
+    };
+  }
 
-function Todo() {
-  const todosItens = todos.map((item, index) => (
-    <div className="card" style={{ width: "150", height: 50 }}>
-      <TodoItem key={index} task={item} />
-    </div>
-  ));
+  handleClick = (item, event) => {
+    console.log("item", item);
+    console.log("event", event);
+  };
 
-  return (
-    <form>
-      <div className="form-group">
-        <h3>Things todo...</h3>
-        <ul style={styles}>{todosItens}</ul>
+  render() {
+    const styles = { listStyleType: "none" };
+
+    const todosItens = this.state.todos.map((item, index) => (
+      <div key={index} className="card" style={{ width: "150", height: 50 }}>
+        <TodoItem task={item} onClick={this.handleClick(item)} />
       </div>
-    </form>
-  );
+    ));
+
+    return (
+      <form>
+        <div className="form-group">
+          <h3>Things todo...</h3>
+          <ul style={styles}>{todosItens}</ul>
+        </div>
+      </form>
+    );
+  }
 }
 
 export default Todo;

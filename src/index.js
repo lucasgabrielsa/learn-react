@@ -3,23 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-//import Teste from "./Teste";
-import PersonalInfo from "./components/PersonalInfo";
-import Jokes from "./components/Jokes";
-import Product from "./components/products/Product";
-import Products from "./components/products/Products";
-import SimpleAlert from "./components/SimpleAlert";
+import FirstStateComponent from "./components/FirstStateComponent";
+import LogUser from "./components/LogUser";
 import Todo from "./components/Todo";
-import SimpleClassComponent from "./components/SimpleClassComponent";
+import EventTest from "./components/EventTest";
+import Counter from "./components/Counter";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <PersonalInfo /> */}
-    {/* <Jokes /> */}
-    {/* <Products /> */}
-    {/* <SimpleAlert /> */}
+    {/* /<FirstStateComponent /> */}
+    {/* <LogUser isUserLogged="true" /> */}
     {/* <Todo /> */}
-    <SimpleClassComponent name="Lucas Gabriel" />
+    {/* <EventTest /> */}
+    <Counter />
   </React.StrictMode>,
   document.getElementById("root")
 );

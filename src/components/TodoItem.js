@@ -10,9 +10,7 @@ function TodoItem(props) {
           defaultChecked={props.task.isDone}
           className="form-check-input"
         />
-        <label className="form-check-label" for="exampleCheck1">
-          {props.task.description}
-        </label>
+        <label className="form-check-label">{props.task.description}</label>
       </li>
     </div>
   );
