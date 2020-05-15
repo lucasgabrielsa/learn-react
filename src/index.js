@@ -5,10 +5,12 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 //import Teste from "./Teste";
 import PersonalInfo from "./components/PersonalInfo";
+import Jokes from "./components/Jokes";
 
 ReactDOM.render(
   <React.StrictMode>
     <PersonalInfo />
+    {/* <Jokes /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

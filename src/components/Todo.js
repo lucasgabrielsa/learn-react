@@ -9,22 +9,15 @@ const todos = [
 const styles = { listStyleType: "none" };
 
 function Todo() {
+  const todosItens = todos.map((item, index) => (
+    <TodoItem key={index} task={item} />
+  ));
+
   return (
     <form>
       <div className="form-group">
         <h3>Things todo...</h3>
-        <ul style={styles}>
-          {todos.map((item, index) => {
-            return <TodoItem key={index} task={item} />;
-
-            // return (
-            //   <li key={index}>
-            //     <input type="checkbox" value={item} />
-            //     <span style={{ paddingLeft: "10px" }}>{item}</span>
-            //   </li>
-            // );
-          })}
-        </ul>
+        <ul style={styles}>{todosItens}</ul>
       </div>
     </form>
   );
