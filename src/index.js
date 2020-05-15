@@ -6,11 +6,20 @@ import * as serviceWorker from "./serviceWorker";
 //import Teste from "./Teste";
 import PersonalInfo from "./components/PersonalInfo";
 import Jokes from "./components/Jokes";
+import Product from "./components/products/Product";
+import Products from "./components/products/Products";
+import SimpleAlert from "./components/SimpleAlert";
+import Todo from "./components/Todo";
+import SimpleClassComponent from "./components/SimpleClassComponent";
 
 ReactDOM.render(
   <React.StrictMode>
-    <PersonalInfo />
+    {/* <PersonalInfo /> */}
     {/* <Jokes /> */}
+    {/* <Products /> */}
+    {/* <SimpleAlert /> */}
+    {/* <Todo /> */}
+    <SimpleClassComponent name="Lucas Gabriel" />
   </React.StrictMode>,
   document.getElementById("root")
 );

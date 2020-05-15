@@ -10,7 +10,9 @@ const styles = { listStyleType: "none" };
 
 function Todo() {
   const todosItens = todos.map((item, index) => (
-    <TodoItem key={index} task={item} />
+    <div className="card" style={{ width: "150", height: 50 }}>
+      <TodoItem key={index} task={item} />
+    </div>
   ));
 
   return (
