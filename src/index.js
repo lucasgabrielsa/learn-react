@@ -3,13 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-// import Counter from "./components/Counter";
-import Todo from "./components/Todo";
+import LifeCircle from "./components/LifeCircle";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Counter /> */}
-    <Todo />
+    <LifeCircle />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -3,10 +3,10 @@ import React from "react";
 class TodoItem extends React.Component {
   constructor() {
     super();
-    this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(indice, event) {
+  handleClick(indice) {
     //event.preventDefault();
     this.props.onHandleCheckClick(indice);
   }
@@ -20,7 +20,7 @@ class TodoItem extends React.Component {
             checked={this.props.task.isDone}
             defaultChecked={this.props.task.isDone}
             className="form-check-input"
-            onClick={(e) => this.handleClick(this.props.indice, e)}
+            onClick={() => this.handleClick(this.props.indice)}
           />
           <label className="form-check-label">
             {this.props.task.description}
