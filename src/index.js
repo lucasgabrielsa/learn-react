@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import LifeCircle from "./components/LifeCircle";
+import Login from "./components/login/Login";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LifeCircle />
+    <Login />
   </React.StrictMode>,
   document.getElementById("root")
 );
