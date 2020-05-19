@@ -20,7 +20,7 @@ class NameForm extends React.Component {
 
     const target = event.target;
     const value = target.name === "isDeveloper" ? target.checked : target.value;
-    const name = target.name;
+    const { name } = target;
 
     this.setState((prevState) => {
       return {
