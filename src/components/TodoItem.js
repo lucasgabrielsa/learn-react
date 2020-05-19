@@ -12,8 +12,12 @@ class TodoItem extends React.Component {
   }
 
   render() {
+    const greyStyle = {
+      backgroundColor: this.props.task.isDone ? "gray" : null,
+    };
+
     return (
-      <div className="form-check">
+      <div className="form-check" style={greyStyle}>
         <li>
           <input
             type="checkbox"

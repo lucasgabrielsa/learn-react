@@ -31,6 +31,10 @@ class Todo extends React.Component {
     });
   }
 
+  countTasksCompleted() {
+    return this.state.todos.filter((i) => i.isDone === true).length;
+  }
+
   render() {
     const styles = { listStyleType: "none" };
 
@@ -49,6 +53,9 @@ class Todo extends React.Component {
         <div className="form-group">
           <h3>Things todo...</h3>
           <ul style={styles}>{todosItens}</ul>
+          <hr />
+          <h3>{this.state.todos.length} task(s) register</h3>
+          <h3>{this.countTasksCompleted()} task(s) done</h3>
         </div>
       </form>
     );

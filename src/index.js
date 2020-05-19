@@ -4,10 +4,12 @@ import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Login from "./components/login/Login";
+import Todo from "./components/Todo";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    {/* <Login /> */}
+    <Todo />
   </React.StrictMode>,
   document.getElementById("root")
 );
