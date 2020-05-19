@@ -3,13 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Login from "./components/login/Login";
-import Todo from "./components/Todo";
+import NameForm from "./components/forms/NameForm";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Login /> */}
-    <Todo />
+    <NameForm />
   </React.StrictMode>,
   document.getElementById("root")
 );
