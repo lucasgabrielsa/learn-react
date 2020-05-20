@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 //import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import FormComponent from "./components/forms/FormComponent";
+import SimpleHook from "./components/hooks/SimpleHook";
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormComponent />
+    <SimpleHook />
   </React.StrictMode>,
   document.getElementById("root")
 );
