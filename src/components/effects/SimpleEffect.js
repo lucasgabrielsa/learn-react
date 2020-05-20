@@ -14,15 +14,20 @@ function SimpleEffect(props) {
   }
 
   /* empty array just when first time loadind the component */
+
   useEffect(() => {
-    setColor(randomcolor());
+    const intervalId = setInterval(() => {
+      setCount((prevCount) => prevCount + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
-  /* when count change */
-  /*
   useEffect(() => {
     setColor(randomcolor());
-  }, [count]);*/
+  }, [count]);
 
   return (
     <div>
